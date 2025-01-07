@@ -20,10 +20,14 @@ GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 PASSWORD_RESET_SALT=your_reset_salt
 Replace the placeholders with your actual credentials and secrets.
+
+
 5. Run the following commands to initialize the database:
 from app import db
 db.create_all()
 exit()
+
+
 6. Run the application
 flask run
 The application will be available at http://127.0.0.1:5000/.
