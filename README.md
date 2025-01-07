@@ -10,7 +10,7 @@ python -m venv venv
 
 venv\Scripts\activate
 
-4.Create a .env file in the root directory of your project and add the following variables:
+4. Create a .env file in the root directory of your project and add the following variables:
 FLASK_SECRET_KEY=your_flask_secret_key
 DATABASE_URL=sqlite:///users.db  # or your preferred database URI
 MAIL_USERNAME=your_email@gmail.com
