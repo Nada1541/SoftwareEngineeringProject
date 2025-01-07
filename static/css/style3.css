@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.goal-check-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+button.btn-compare {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.btn-compare:hover {
+    background-color: #555;
+}
+
+.result-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.failure-message {
+    background-color: #F44336;
+    color: white;
+}
+
+.reminder-message {
+    background-color: #FF9800;
+    color: white;
+}
+
+.progress-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    transition: width 0.4s ease-in-out;
+    border-radius: 8px;
+}
+
+
+@keyframes confetti {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(300px); opacity: 0; }
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    animation: confetti 2s linear infinite;
+    top: 0;
+}
+
+.chart-container {
+    margin-top: 30px;
+    max-width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #007acc;
+}
+
+p {
+    font-size: 1.2em;
+    margin-top: -10px;
+    color: #555;
+}
+
+
+.bottle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 300px;
+}
+
+.bottle {
+    position: relative;
+    width: 120px;
+    height: 300px;
+    background: #e0e0e0;
+    border: 5px solid #007acc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0; 
+    background: linear-gradient(to top, #00bfff, #007acc);
+    transition: height 0.5s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.button-container {
+    margin: 20px auto;
+}
+
+.button-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #005f99;
+}
+
+
+.check-marks-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+    flex-wrap: wrap; 
+}
+
+.check-mark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007acc;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.check-mark.filled {
+    background-color: #007acc;
+}
